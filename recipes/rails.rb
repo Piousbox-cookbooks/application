@@ -102,9 +102,6 @@ if app.has_key?("deploy_key")
   end
 end
 
-puts '+++ +++'
-puts app.inspect
-
 if app["database_master_role"]
   dbm = nil
   # If we are the database master
@@ -219,3 +216,6 @@ deploy_revision app['id'] do
     end
   end
 end
+
+
+
